@@ -159,3 +159,12 @@ fig.update_layout(
 
 # show the plot
 st.plotly_chart(fig)
+
+# title and description at the top
+st.title("Table view")
+st.markdown("""
+This table allows you to download your results in .csv file and to see more details regarding your recent query.
+""")
+
+
+st.dataframe(geo_coord)
